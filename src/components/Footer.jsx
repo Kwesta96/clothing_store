@@ -64,10 +64,14 @@ const Right = styled.div`
     padding: 20px;
 `
 const ContactItem = styled.div`
-    
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
 `
 
-
+const Payment = styled.img`
+    width: 10%;
+`
 export const Footer = () => {
     return (
         <Container>
@@ -113,17 +117,18 @@ export const Footer = () => {
             <Right>
                 <Title>Contact</Title>
                 <ContactItem>
-                    <Room/>
+                    <Room style={{marginRight: "10px"}}/>
                     123 Road, South Africa, 1234
                 </ContactItem>
                 <ContactItem>
-                    <Phone/>
+                    <Phone style={{marginRight: "10px"}}/>
                     +27 12 345 6789
                 </ContactItem>
                 <ContactItem>
-                    <MailOutline/>
+                    <MailOutline style={{marginRight: "10px"}}/>
                     contactus@email.com
                 </ContactItem>
+                <Payment src="https://img.ltwebstatic.com/images3_pi/2021/03/09/161528368123dd7a35ad8708b0dfc74b3630526891.png"/>
             </Right>
         </Container>
     )
