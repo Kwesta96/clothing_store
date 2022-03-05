@@ -3,14 +3,14 @@ export const sliderItems = [
         id: 1,
         img: "https://i.ibb.co/nMZz6kp/dress.png",
         title: "SUMMER SALE",
-        desc: "DON'T COMPROMISE ON STYLE! GET 30% OFF FOR NEW ARRIIVALS",
+        desc: "DON'T COMPROMISE ON STYLE! GET 30% OFF FOR NEW ARRIVALS",
         bg: "f5fafd",
     },
     {
         id: 2,
         img: "https://i.ibb.co/Lk38jrQ/dress3.png",
         title: "AUTUMN COLLECTION",
-        desc: "DON'T COMPROMISE ON STYLE! GET 30% OFF FOR NEW ARRIIVALS",
+        desc: "DON'T COMPROMISE ON STYLE! GET 30% OFF FOR NEW ARRIVALS",
         bg: "fcf1ed",
     },
     {

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { FavoriteBorderOutlined, SearchOutlined, ShoppingCartOutlined } from '@material-ui/icons';
-
+import { mobile } from '../responsive'
 
 const Info = styled.div`
     opacity: 0;
@@ -16,7 +16,9 @@ const Info = styled.div`
     justify-content: center;
     transition: all 0.5s ease;
     cursor: pointer;
-
+    ${mobile({
+        
+    })}
 `
 
 const Container = styled.div`

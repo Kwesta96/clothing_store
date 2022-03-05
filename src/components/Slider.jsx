@@ -1,7 +1,9 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons'
-import React, { useState } from 'react'
-import styled from 'styled-components'
-import { sliderItems } from '../data'
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import { sliderItems } from '../data';
+import { mobile } from '../responsive';
+import { Link } from 'react-router-dom';
 
 const Container = styled.div`
     width: 100%;
@@ -9,6 +11,9 @@ const Container = styled.div`
     display: flex;
     position: relative;
     overflow: hidden;
+    ${mobile({
+            display: "none"
+        })}
 `
 
 const Arrow = styled.div`
@@ -104,7 +109,9 @@ export default function Slider() {
                         <InfoContainer>
                             <Title>{item.title}</Title>
                             <Desc>{item.desc}</Desc>
+                            <Link to="/product">
                             <Button>SHOP NOW</Button>
+                            </Link>
                         </InfoContainer>
                     </Slide>
                 ))}

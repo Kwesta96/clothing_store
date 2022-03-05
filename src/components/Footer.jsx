@@ -1,8 +1,13 @@
 import styled from 'styled-components'
 import { Facebook, Instagram, LinkedIn, Twitter, YouTube, Room, Phone, MailOutline } from '@material-ui/icons';
+import { mobile } from '../responsive'
 
 const Container = styled.div`
     display: flex;
+    ${mobile({
+        flexDirection: "column"
+    })}
+    
 `
 
 const Left = styled.div`
@@ -40,6 +45,9 @@ const SocialIcon = styled.div`
 const Center = styled.div`
     flex: 1;
     padding: 20px;
+    ${mobile({
+        display: "none"
+    })}
 `
 
 const Title = styled.h3`
@@ -62,6 +70,9 @@ const ListItem = styled.li`
 const Right = styled.div`
     flex: 1;
     padding: 20px;
+    ${mobile({
+        background: "#fff8f8"
+    })}
 `
 const ContactItem = styled.div`
     margin-bottom: 20px;
@@ -69,9 +80,6 @@ const ContactItem = styled.div`
     align-items: center;
 `
 
-const Payment = styled.img`
-    width: 10%;
-`
 export const Footer = () => {
     return (
         <Container>
@@ -128,7 +136,6 @@ export const Footer = () => {
                     <MailOutline style={{marginRight: "10px"}}/>
                     contactus@email.com
                 </ContactItem>
-                <Payment src="https://img.ltwebstatic.com/images3_pi/2021/03/09/161528368123dd7a35ad8708b0dfc74b3630526891.png"/>
             </Right>
         </Container>
     )
